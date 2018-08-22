@@ -1,7 +1,9 @@
----
 applications:
-  - name: shipping-service-js
-    memory: 256M
-    instances: 1
-    env:
-      MICROS_PRODUCTS_URL: "product-service-java.eu-gb.mybluemix.net/products"
+- path: ./
+  memory: 256M
+  instances: 1
+  name: shipping-service-js
+  env:
+    NODE_ENV: production
+    MICROS_PRODUCTS_URL: "product-service-java.eu-gb.mybluemix.net/products"
+buildpack: sdk-for-nodejs

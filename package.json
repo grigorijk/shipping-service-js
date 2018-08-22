@@ -1,14 +1,17 @@
 {
   "name": "shipping-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "Shipping service",
   "main": "src/app.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha tests",
     "start": "node ."
   },
-  "keywords": [],
-  "author": "",
+  "engines": {
+    "node": "8.x.x",
+    "npm": "5.6.x"
+  },
+  "author": "Ramunas Pikcius",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
@@ -19,8 +22,5 @@
     "mocha": "^5.2.0",
     "nock": "^9.5.0",
     "sinon": "^6.1.4"
-  },
-  "engines": {
-    "node": "8.x.x"
   }
 }

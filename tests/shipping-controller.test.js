@@ -1,3 +1,4 @@
+// tests/shipping-controller.test.js
 var chai = require('chai')
 var expect = chai.expect
 var sinon = require('sinon')
@@ -30,5 +31,4 @@ describe('Shipping controller', function () {
         let shipping = await shippingCtrl.getItemShipping({ id: 1, type: 'overnight' })
         expect(shipping).to.equal(5)
     })
-
 })
