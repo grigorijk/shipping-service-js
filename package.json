@@ -1,14 +1,14 @@
 {
-  "name": "shipping-service",
+  "name": "lab2-tdd",
   "version": "1.0.0",
-  "description": "Shipping service",
-  "main": "src/app.js",
+  "description": "Lab2 app",
+  "main": "app.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha tests",
-    "start": "node ."
+    "test": "mocha tests",
+    "start": "node src/app.js"
   },
   "engines": {
-    "node": "8.x.x",
+    "node": "8.11.3",
     "npm": "5.6.x"
   },
   "author": "Ramunas Pikcius",
@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.2.0",
-    "nock": "^9.5.0",
-    "sinon": "^6.1.4"
+    "nock": "^9.4.2",
+    "sinon": "^6.1.3",
+    "mocha": "^5.2.0"
   }
 }

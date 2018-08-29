@@ -7,9 +7,9 @@ app.get('/shipping', (request, response) => {
   let ctrl = new ShippingController()
 
   ctrl
-    .getItemShipping({id: request.query.product, type: request.query.type})
+    .getItemShipping({id: request.query.itemId, type: request.query.type})
     .then(amount => {
-      response.send({ product: request.query.product, priceUSD: amount })
+      response.send({ itemId: request.query.itemId, amount: amount })
     })
     .catch(error => {
       response.status(500).send({ error: error.message })
