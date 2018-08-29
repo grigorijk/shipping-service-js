@@ -4,5 +4,5 @@ applications:
     memory: 256M
     instances: 1
     env:
-      MICROS_PRODUCTS_URL: "labs-product-service.eu-gb.mybluemix.net/products"
+      MICROS_PRODUCTS_URL: "product-service-java.eu-gb.mybluemix.net/products"
         
