@@ -16,5 +16,5 @@ spec:
       - image: mycluster.icp:8500/lab-cph/shipping-service-XX:v1.0.0
         name: shipping-service-XX
         ports:
-        - containerPort: 8080
+        - containerPort: 3001
           protocol: TCP
