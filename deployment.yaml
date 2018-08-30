@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: shipping-service-XX
+  name: shipping-service-XX
+  namespace: lab-cph
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shipping-service-XX
+    spec:
+      containers:
+      - image: mycluster.icp:8500/lab-cph/shipping-service-XX:v1.0.0
+        name: shipping-service-XX
+        ports:
+        - containerPort: 8080
+          protocol: TCP
