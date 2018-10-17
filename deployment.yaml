@@ -4,7 +4,7 @@ metadata:
   labels:
     app: shipping-service-XX
   name: shipping-service-XX
-  namespace: lab-cph
+  namespace: lab-london
 spec:
   replicas: 1
   template:
@@ -13,7 +13,7 @@ spec:
         app: shipping-service-XX
     spec:
       containers:
-      - image: mycluster.icp:8500/lab-cph/shipping-service-XX:v1.0.0
+      - image: mycluster.icp:8500/lab-london/shipping-service-XX:v1.0.0
         name: shipping-service-XX
         ports:
         - containerPort: 3001
