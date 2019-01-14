@@ -1,14 +1,18 @@
-var productService = require('../services/product-service')
-function ShippingController() {}
+var productService = require("../services/product-service");
 
-const REGULAR_PRICE = 0.1, OVERNIGHT_PRICE = 1
+class ShippingController {
+  constructor() {
+    this.REGULAR_PRICE = 0.1;
+    this.OVERNIGHT_PRICE = 1;
+  }
 
-ShippingController.prototype.getItemShipping = async function (item) {
-  var shippingAmount = await productService.getProductWeight(item.id)
-  if (item.type.toLowerCase() === 'overnight') {
-    return shippingAmount * OVERNIGHT_PRICE
-  } else {
-    return shippingAmount * REGULAR_PRICE
+  async getItemShipping(item) {
+    var shippingAmount = await productService.getProductWeight(item.id)
+    if (item.type.toLowerCase() === 'overnight') {
+      return shippingAmount * this.OVERNIGHT_PRICE
+    } else {
+      return shippingAmount * this.REGULAR_PRICE
+    }
   }
 }
 

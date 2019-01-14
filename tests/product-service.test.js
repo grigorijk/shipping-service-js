@@ -1,5 +1,6 @@
-var chai = require('chai')
-var expect = chai.expect
+/**
+ * @jest-environment node
+ */
 var productService = require('../src/services/product-service')
 var nock = require('nock')
 
@@ -14,7 +15,7 @@ describe('Product service', function () {
       })
 
     let weight = await productService.getProductWeight('13')
-    expect(weight).to.equal(15.5)
+    expect(weight).toBe(15.5)
   })
 
   it('Should handle unexpected response structure', async function () {
@@ -27,10 +28,10 @@ describe('Product service', function () {
     await productService
       .getProductWeight('19')
       .then(() => {
-        throw (new Error('Should not resolve in case of malformed data'))
+        throw(new Error('Should not resolve in case of malformed data'))
       })
       .catch(err => {
-        expect(err.message).to.equal('Invalid response object');
+        expect(err.message).toBe('Invalid response object')
       })
   })
 })
