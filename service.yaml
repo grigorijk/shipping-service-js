@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: shipping-service-svc-XX
-  namespace: lab-london
+  namespace: lab-malmo
 spec:
   ports:
     - port: 3001
