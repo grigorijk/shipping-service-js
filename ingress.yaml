@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: shipping-service-ingress-XX
+  namespace: lab-cnb
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /shipping-service-XX
+        backend:
+          serviceName: shipping-service-svc-XX
+          servicePort: 3001
