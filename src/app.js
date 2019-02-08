@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const ShippingController = require('../src/controllers/shipping-controller')
 
-app.get('/shipping', (request, response) => {
+app.get('/*shipping', (request, response) => {
   let ctrl = new ShippingController()
 
   ctrl
