@@ -4,24 +4,26 @@
   "description": "Lab2 app",
   "main": "app.js",
   "scripts": {
-    "test": "jest tests",
+    "test": "jest tests --env=node",
     "start": "node src/app.js"
   },
   "engines": {
     "node": "8.11.3",
     "npm": "5.6.x"
   },
-
-  
   "author": "Ramunas Pikcius",
   "license": "ISC",
-  "devDependencies": {
-    "nock": "^10.0.6",
-    "sinon": "^7.2.2"
+  "jest": {
+    "testEnvironment": "node"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "nock": "^10.0.6",
+    "sinon": "^7.2.2"
   }
 }
 
