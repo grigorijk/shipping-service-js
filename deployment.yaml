@@ -13,7 +13,7 @@ spec:
         app: shipping-service-XX
     spec:
       containers:
-      - image: mycluster.icp:8500/lab-cnb/shipping-service-XX:v1.0.0
+      - image: mycluster.icp:8500/lab-cnb/shipping-service-XX:v1.0.1
         name: shipping-service-XX
         ports:
         - containerPort: 3001
