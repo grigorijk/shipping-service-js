@@ -1,21 +1,18 @@
 {
-  "name": "shipping-service-js",
+  "name": "shipping-service-js-WOS",
   "version": "1.0.0",
-  "description": "Lab2 app",
+  "description": "Lab2 app (CF Deployment)",
   "main": "app.js",
   "scripts": {
-    "test": "jest tests --env=node",
+    "test": "jest tests",
     "start": "node src/app.js"
   },
   "engines": {
     "node": "8.11.3",
     "npm": "5.6.x"
   },
-  "author": "Ramunas Pikcius",
+  "author": "Wolfgang Schuh",
   "license": "ISC",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.4"
