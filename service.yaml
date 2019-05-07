@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: shipping-service-svc-XX
+  name: shipping-service-svc-WS
   namespace: lab-cnb
 spec:
   ports:
     - port: 3001
   selector:
-    app: shipping-service-XX
+    app: shipping-service-WS
   type: NodePort
