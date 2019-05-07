@@ -18,4 +18,4 @@ app.get('/*shipping', (request, response) => {
 })
 
 let PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`ShippingService is listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`ShippingService is listening now on port ${PORT}`))
