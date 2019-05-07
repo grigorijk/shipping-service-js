@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: shipping-service-js-NNN
+  - name: shipping-service-js-WOS
     memory: 256M
     instances: 1
     env:
