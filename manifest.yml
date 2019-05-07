@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: shipping-service-js-WOS
+  - name: shipping-service-js-WS
     memory: 256M
     instances: 1
     env:
