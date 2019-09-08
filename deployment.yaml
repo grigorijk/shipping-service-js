@@ -13,7 +13,7 @@ spec:
         app: shipping-service-XX
     spec:
       containers:
-      - image: uk.icr.io/lab-cnb/shipping-service-XX:v1.0.0
+      - image: uk.icr.io/lab-cnb/shipping-service-XX:v1.0.1
         name: shipping-service-XX
         ports:
         - name: app-port
