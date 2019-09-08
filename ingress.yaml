@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: shipping-service-ingress-XX
   namespace: lab-cnb
+  labels:
+    app: shipping-service-XX  
 spec:
   rules:
   - host: shipping-service-XX.cnb-iks.eu-gb.containers.appdomain.cloud
