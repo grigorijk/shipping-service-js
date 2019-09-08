@@ -3,13 +3,12 @@ kind: Ingress
 metadata:
   name: shipping-service-ingress-XX
   namespace: lab-cnb
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - http:
+  - host: shipping-service-XX.cnb-iks.eu-gb.containers.appdomain.cloud
+    http:
       paths:
-      - path: /shipping-service-XX
+      - path: /
         backend:
           serviceName: shipping-service-svc-XX
-          servicePort: 3001
+          servicePort: app-port

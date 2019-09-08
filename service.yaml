@@ -3,9 +3,13 @@ kind: Service
 metadata:
   name: shipping-service-svc-XX
   namespace: lab-cnb
+  labels:
+    app: shipping-service-XX
 spec:
+  type: NodePort
   ports:
-    - port: 3001
+    - name: app-port
+      targetPort: app-port
+      port: 3000
   selector:
     app: shipping-service-XX
-  type: NodePort
