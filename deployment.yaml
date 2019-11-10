@@ -4,7 +4,6 @@ metadata:
   labels:
     app: shipping-service-XX
   name: shipping-service-XX
-  namespace: lab-cnb
 spec:
   replicas: 1
   template:

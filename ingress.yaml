@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: shipping-service-ingress-XX
-  namespace: lab-cnb
   labels:
     app: shipping-service-XX  
 spec:
