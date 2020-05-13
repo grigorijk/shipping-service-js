@@ -1,2 +1,2 @@
 PORT=8080
-MICROS_PRODUCTS_URL=product-service-java.eu-gb.mybluemix.net/products
+PRODUCT_SERVICE_URL=v7a4m6m4.hostrycdn.com/product-service/products

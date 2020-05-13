@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
-ENV MICROS_PRODUCTS_URL=product-service-java.eu-gb.mybluemix.net/products
+ENV PRODUCT_SERVICE_URL=v7a4m6m4.hostrycdn.com/product-service/products
 # Bundle app source
 RUN mkdir src
 COPY src src

@@ -6,7 +6,7 @@ var nock = require('nock')
 
 describe('Product service', function () {
   it('Should call remote service', async function () {
-    nock('https://mycluster.icp:8899/products')
+    nock('https://product.service:8899/products')
       .get('/13')
       .delayBody(10)
       .reply(200, {
@@ -19,7 +19,7 @@ describe('Product service', function () {
   })
 
   it('Should handle unexpected response structure', async function () {
-    nock('https://mycluster.icp:8899/products')
+    nock('https://product.service:8899/products')
       .get('/19')
       .reply(200, {
         res: 15.5
